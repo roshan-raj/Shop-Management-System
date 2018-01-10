@@ -12,3 +12,5 @@ You need to have 'Apache Tomcat' Installed in your system to run the servlet Cod
 You need to have 'Oracle Database 11g Express Edition' or higher in your system.
 
 You can edit the username and password for your database in the 'src/java/db/connection/DatabaseConnection.java' file.
+
+You need to run the 'MainPage.html' in your server 'localhost:8080/../MainPage.html'.
