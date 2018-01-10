@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+#section4 {
+	padding-top:50px;
+	padding-bottom: 5px;
+	height:100%;
+	color: white;
+	background-image: url(skback1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+        background-attachment: fixed;
+	opacity: 0.7;
+}
+::selection {
+        background-color: #FAFAFA;
+    }
+::-moz-selection {
+        background-color: #FAFAFA;
+    }
+.container {
+        display: -webkit-flex;
+        display: flex;
+        height: 100%;		
+    }
+#logbox {
+        padding: 10px;
+        margin: 50px auto;
+        width: 340px;
+        background-color: #fff;
+	opacity: 0.8;
+	color: black;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    }
+h1 {
+        text-align: center;
+        font-size: 175%;
+        color: #757575;
+        font-weight: 300;
+    }
+h1, input {
+        font-family: "Open Sans", Helvetica, sans-serif;
+    }
+.input {
+        width: 75%;
+        height: 50px;
+        display: block;
+        margin: 0 auto 15px;
+        padding: 0 15px;
+        border: none;
+        border-bottom: 2px solid #000000;
+    }
+.input:focus {
+        outline: none;
+        border-bottom-color: #3CC !important;
+    }
+.input:hover {
+        border-bottom-color: #dcdcdc;
+    }
+.input:invalid {
+        box-shadow: none;
+    }
+.pass:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+    }
+.inputButton {
+        position: relative;
+        width: 85%;
+        height: 50px;
+        display: block;
+        margin: 30px auto 30px;
+        color: black;
+        background-color: #191919;
+        border: none;
+        -webkit-box-shadow: 0 5px 0 #000000;
+        -moz-box-shadow: 0 5px 0 #000000;
+        box-shadow: 0 5px 0 #000000;
+    }
+.inputButton:hover {
+        top: 2px;
+        -webkit-box-shadow: 0 3px 0 #000000;
+        -moz-box-shadow: 0 3px 0 #000000;
+        box-shadow: 0 3px 0 #000000;
+		font-size: 200%;
+    }
+.inputButton:active {
+        top: 5px;
+        box-shadow: none;
+    }
+.inputButton:focus {
+        outline: none;
+    }
+.navbar-brand{
+	font-size: 20;
+		color: white;
+    font-family: cursive;
+	}
+footer 
+{
+	width:100%;
+}
+address
+{
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-size:15px;	
+	margin-top: -10px;
+	margin-bottom: 6px;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+	

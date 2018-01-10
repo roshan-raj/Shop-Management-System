@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+#section1 {
+	padding-top:80px;
+	padding-bottom: 5px;
+	height:100%;
+	color: #fff;
+	opacity: 0.8;
+	background-image: url(skback1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+        background-attachment: fixed;
+	opacity: 0.7;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    color: black;
+}
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+    color:black;
+}
+th {
+    background-color: black;
+    color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  color: black;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+  color: black;
+} 
+footer 
+{
+	width:100%;
+}
+address
+{
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-size:15px;	
+	margin-top: -10px;
+	margin-bottom: 6px;
+}
