@@ -14,3 +14,5 @@ You need to have 'Oracle Database 11g Express Edition' or higher in your system.
 You can edit the username and password for your database in the 'src/java/db/connection/DatabaseConnection.java' file.
 
 You need to run the 'MainPage.html' in your server 'localhost:8080/../MainPage.html'.
+
+The file 'Tables.txt' contains the SQL Commands which you can run to create the Database Tables for the Project.
