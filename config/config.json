@@ -1,0 +1,27 @@
+{
+    "development": {
+        "config_id": "development",
+        "app_name": "ShopManagementBackendDev",
+        "app_desc": "Shop Management System Backend Development",
+        "node_port": 3002,
+        "json_indentation": 4,
+        "database": "shop-db"
+    },
+    "testing": {
+        "config_id": "testing",
+        "app_name": "ShopManagementBackendTest",
+        "database": "shop-db-test"
+    },
+    "staging": {
+        "config_id": "staging",
+        "node_port": 8080,
+        "database": "shop-db-stag",
+        "app_name": "ShopManagementBackendStag"
+    },
+    "production": {
+        "config_id": "production",
+        "node_port": 3002,
+        "database": "shop-db-prod",
+        "app_name": "ShopManagementBackendProd"
+    }
+}
