@@ -1,6 +1,6 @@
 let rolesEnum = {
     'ADMIN': 0,
-    'SHOPOWNER': 1,
+    'SHOP_OWNER': 1,
     'CUSTOMER': 2
 };
 Object.freeze(rolesEnum);

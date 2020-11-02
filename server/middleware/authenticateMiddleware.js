@@ -32,7 +32,7 @@ let authenticateAdmin = (req, res, next) => {
     })(req, res, next);
 }
 
-let authenticateShopOwner = (req, res, next) => {
+let authenticateSHOP_OWNER = (req, res, next) => {
     passport.authenticate('jwt', function (err, user, info) {
         if (err) return next(err);
 
@@ -47,16 +47,16 @@ let authenticateShopOwner = (req, res, next) => {
             return returnResponse(res, formatResponse(401, null, "User is Logged Out"));
         }
 
-        if (user.roleid.includes(rolesEnum.ADMIN) || user.roleid.includes(rolesEnum.SHOPOWNER)) {
+        if (user.roleid.includes(rolesEnum.ADMIN) || user.roleid.includes(rolesEnum.SHOP_OWNER)) {
             req.user = user;
             next();
         } else {
-            return returnResponse(res, formatResponse(401, null, "Unauthorized access, Only ShopOwner can access this!"));
+            return returnResponse(res, formatResponse(401, null, "Unauthorized access, Only SHOP_OWNER can access this!"));
         }
     })(req, res, next);
 }
 
 module.exports = {
     authenticateAdmin,
-    authenticateShopOwner
+    authenticateSHOP_OWNER
 }

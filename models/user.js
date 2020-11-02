@@ -3,6 +3,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { v4 } = require('uuid');
 
+const { rolesEnum } = require('../utils/constantUtils');
+
 const UserSchema = mongoose.Schema({
     email: {
         type: String,
@@ -42,10 +44,10 @@ const UserSchema = mongoose.Schema({
     },
 
     roleid: {
-        type: Number,
+        type: Array,
         required: true,
-        //Todo Use constants file and require it here and change the role id to a constant
-        default: 3
+        default: rolesEnum.CUSTOMER,
+        enum: [rolesEnum.CUSTOMER, rolesEnum.SHOP_OWNER, rolesEnum.ADMIN]
     },
 
     bio: {
@@ -58,7 +60,7 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: false
     },
-    
+
     tokens: [
         {
             token: {
@@ -96,12 +98,6 @@ UserSchema.methods.comparePassword = function (password) {
     return bcrypt.compareSync(password, this.password);
 };
 
-// used to compare the password entered by the user during login to the user’s password
-// currently in the database.
-UserSchema.methods.comparePasswordWithoutHashing = function (password) {
-    return password === this.firstTimePassword;
-};
-
 // used for creating the authentication tokens using the jwt package.
 // This token will be returned to the user and will be required for accessing protected routes.
 UserSchema.methods.generateJWT = function () {
@@ -115,7 +111,7 @@ UserSchema.methods.generateJWT = function () {
     // The token payload includes the user’s userid and email address
     // and is set to expire 60 days in the future.
     return jwt.sign(payload, process.env.JWT_SECRET, {
-        expiresIn: '60d'
+        expiresIn: '7d'
     });
 };
 

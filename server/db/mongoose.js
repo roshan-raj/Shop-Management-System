@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect(`${process.env.MONGO_URL_LOCAL}`, {
-    useMongoClient: true
-});
+mongoose.connect(`${process.env.MONGO_URL_LOCAL}`, {});
 
 //Mongoose Events Which Will Keep Track Of Connection to DB
 mongoose.connection.on('connected', function (res) {
