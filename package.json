@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/roshan-raj/Shop-Management-System#readme",
   "dependencies": {
-    "bcrypt": "^4.0.1",
+    "bcrypt": ">=5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.3",
@@ -34,7 +34,7 @@
     "http-errors": "~1.6.2",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
-    "mongoose": "^4.13.20",
+    "mongoose": ">=5.7.5",
     "morgan": "~1.9.0",
     "multer": "^1.4.2",
     "nodemailer": "^6.4.6",
