@@ -27,7 +27,7 @@ let options = {
         ]
     },
     apis: [
-        "./routes/authRoutes.js"
+        "./routes/userRoutes.js"
     ]
 };
 

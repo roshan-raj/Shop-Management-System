@@ -76,8 +76,8 @@ if (process.env.NODE_ENV != 'development' && process.env.NODE_ENV != 'testing')
 
 //===============================================================================
 //Require all the routes
-// const authRoutes = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
 
-// app.use('/', authRoutes);
+app.use('/', userRoutes);
 
 module.exports = app;

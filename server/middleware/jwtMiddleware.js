@@ -3,7 +3,7 @@
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
-const User = require('../../models/userModel');
+const User = require('../../models/user');
 
 //"fromAuthHeaderAsBearerToken() creates a new extractor that looks for the JWT,
 // in the authorization header with the scheme 'bearer'"
