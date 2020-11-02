@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect(`${process.env.MONGO_URL_LOCAL}`, {});
+mongoose.connect(`${process.env.MONGO_URL_LOCAL}`, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+});
 
 //Mongoose Events Which Will Keep Track Of Connection to DB
 mongoose.connection.on('connected', function (res) {

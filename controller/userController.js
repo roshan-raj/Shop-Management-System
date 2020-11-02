@@ -14,6 +14,5 @@ let register = async () => {
 }
 
 module.exports = {
-    register,
-    login
+    register
 }
