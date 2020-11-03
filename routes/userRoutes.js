@@ -7,12 +7,12 @@ const { validate } = require('../server/middleware/validateMiddleware');
 const UserController = require('../controller/userController');
 
 const { authenticateAdmin } = require('../server/middleware/authenticateMiddleware');
-const { returnResponse, formatResponse } = require("../server/middleware/responseMiddleware");
+const { sendResponse, formatAndReturnResponse } = require('com.thbs.responsehelper');
 
 //==============================================================================
 
 app.get('/', (req, res) => {
-    returnResponse(res, formatResponse(200, null, "You are in the Auth Endpoint. Register or Login to test Authentication."));
+    sendResponse(res, formatAndReturnResponse(200, null, "You are in the Auth Endpoint. Register or Login to test Authentication."));
 });
 
 //==============================================================================

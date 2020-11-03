@@ -3,7 +3,7 @@ var bcrypt = require('bcrypt-nodejs');
 const _ = require('lodash');
 const { v4 } = require('uuid');
 const jwt = require('jsonwebtoken');
-const { formatResponse } = require('../server/middleware/responseMiddleware');
+const { sendResponse, formatAndReturnResponse } = require('com.thbs.responsehelper');
 
 let register = async () => {
     return new Promise(async (resolve, reject) => {
@@ -14,6 +14,5 @@ let register = async () => {
 }
 
 module.exports = {
-    register,
-    login
+    register
 }

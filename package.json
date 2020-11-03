@@ -26,6 +26,7 @@
     "bcrypt": ">=5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+    "com.thbs.responsehelper": "^1.0.0",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
     "debug": "~2.6.9",

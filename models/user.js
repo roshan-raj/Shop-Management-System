@@ -46,8 +46,7 @@ const UserSchema = mongoose.Schema({
     roleid: {
         type: Array,
         required: true,
-        default: rolesEnum.CUSTOMER,
-        enum: [rolesEnum.CUSTOMER, rolesEnum.SHOP_OWNER, rolesEnum.ADMIN]
+        default: [rolesEnum.CUSTOMER]
     },
 
     bio: {
