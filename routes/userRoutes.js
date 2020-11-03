@@ -12,7 +12,7 @@ const { sendResponse, formatAndReturnResponse } = require('com.thbs.responsehelp
 //==============================================================================
 
 app.get('/', (req, res) => {
-    returnResponse(res, formatResponse(200, null, "You are in the Auth Endpoint. Register or Login to test Authentication."));
+    sendResponse(res, formatAndReturnResponse(200, null, "You are in the Auth Endpoint. Register or Login to test Authentication."));
 });
 
 //==============================================================================

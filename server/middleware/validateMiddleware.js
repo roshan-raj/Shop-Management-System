@@ -9,7 +9,7 @@ let validate = (req, res, next) => {
     if (!errors.isEmpty()) {
         let error = {};
         errors.array().map((err) => error[err.param] = err.msg);
-        return returnResponse(res, formatResponse(400, null, error));
+        return sendResponse(res, formatAndReturnResponse(400, null, error));
     }
     next();
 };
