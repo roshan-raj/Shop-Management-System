@@ -5,7 +5,7 @@
 // If unable to authenticate request, an error message is returned.
 
 const passport = require('passport');
-const { returnResponse, formatResponse } = require('./responseMiddleware');
+const { sendResponse, formatAndReturnResponse } = require('com.thbs.responsehelper');
 const { rolesEnum } = require('../../utils/constantUtils');
 
 let authenticateAdmin = (req, res, next) => {

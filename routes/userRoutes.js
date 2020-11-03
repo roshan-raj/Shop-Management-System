@@ -7,7 +7,7 @@ const { validate } = require('../server/middleware/validateMiddleware');
 const UserController = require('../controller/userController');
 
 const { authenticateAdmin } = require('../server/middleware/authenticateMiddleware');
-const { returnResponse, formatResponse } = require("../server/middleware/responseMiddleware");
+const { sendResponse, formatAndReturnResponse } = require('com.thbs.responsehelper');
 
 //==============================================================================
 
